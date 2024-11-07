@@ -1931,7 +1931,7 @@ function CreateUserAgent() {
         logConfiguration: false,            // If true, constructor logs the registerer configuration.
         uri: SIP.UserAgent.makeURI("sip:"+ SipUsername + "@" + SipDomain),
         transportOptions: {
-            server: "wss://"+ wssServer +":"+ WebSocketPort +""+ ServerPath,
+            server: "ws://"+ wssServer +":"+ WebSocketPort +""+ ServerPath,
             traceSip: false,
             connectionTimeout: TransportConnectionTimeout
             // keepAliveInterval: 30 // Uncomment this and make this any number greater then 0 for keep alive... 
